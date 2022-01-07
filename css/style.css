@@ -217,7 +217,7 @@ svg {
   gap: 20px;
 }
 
-#footer .container .socials-icons a {
+#footer .container .socials-icons button {
   border: 1px solid var(--clr-white);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -226,11 +226,11 @@ svg {
   padding: 8px;
 }
 
-#footer .container .socials-icons a:hover {
+#footer .container .socials-icons button:hover {
   border-color: var(--clr-soft-magenta);
 }
 
-#footer .container .socials-icons a:hover svg {
+#footer .container .socials-icons button:hover svg {
   fill: var(--clr-soft-magenta);
 }
 
