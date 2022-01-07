@@ -1,0 +1,68 @@
+#header {
+  margin-bottom: 50px;
+  .header-container {
+    display: flex;
+
+    .logo {
+      display: flex;
+      width: 120px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+#main {
+  //   border: 2px solid red;
+  margin-bottom: 50px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .illustration {
+      display: flex;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .intro {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 15px;
+
+      .title {
+        font-family: Poppins;
+        font-size: 24px;
+        line-height: 34px;
+      }
+    }
+  }
+}
+
+#footer {
+  .container {
+    display: flex;
+    justify-content: center;
+
+    .socials-icons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      a {
+        border: 1px solid var(--clr-white);
+        display: flex;
+        border-radius: 50%;
+        padding: 8px;
+      }
+    }
+  }
+}
