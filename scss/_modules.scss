@@ -5,6 +5,12 @@
   border-radius: 50px;
   width: 180px;
   box-shadow: 2px 5px 14px rgba(0, 0, 0, 0.4);
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: var(--clr-soft-magenta);
+    color: var(--clr-white);
+  }
 }
 
 .container {

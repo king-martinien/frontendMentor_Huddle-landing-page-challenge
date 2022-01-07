@@ -49,6 +49,12 @@ body {
           justify-content: space-between;
 }
 
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url("/images/bg-desktop.svg");
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -74,6 +80,13 @@ svg {
   width: 180px;
   -webkit-box-shadow: 2px 5px 14px rgba(0, 0, 0, 0.4);
           box-shadow: 2px 5px 14px rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--clr-soft-magenta);
+  color: var(--clr-white);
 }
 
 .container {
@@ -82,7 +95,7 @@ svg {
 }
 
 #header {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 #header .header-container {
@@ -96,6 +109,12 @@ svg {
   display: -ms-flexbox;
   display: flex;
   width: 120px;
+}
+
+@media screen and (min-width: 768px) {
+  #header .header-container .logo {
+    width: 230px;
+  }
 }
 
 #header .header-container .logo img {
@@ -148,6 +167,37 @@ svg {
   line-height: 34px;
 }
 
+@media screen and (min-width: 1024px) {
+  #main .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #main .container .illustration,
+  #main .container .intro {
+    width: 50%;
+  }
+  #main .container .intro {
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 20px;
+  }
+  #main .container .intro .title {
+    font-size: 45px;
+    line-height: 55px;
+    width: 80%;
+  }
+  #main .container .intro .text {
+    width: 80%;
+  }
+}
+
 #footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,5 +224,21 @@ svg {
   display: flex;
   border-radius: 50%;
   padding: 8px;
+}
+
+#footer .container .socials-icons a:hover {
+  border-color: var(--clr-soft-magenta);
+}
+
+#footer .container .socials-icons a:hover svg {
+  fill: var(--clr-soft-magenta);
+}
+
+@media screen and (min-width: 1024px) {
+  #footer .container {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 /*# sourceMappingURL=style.css.map */

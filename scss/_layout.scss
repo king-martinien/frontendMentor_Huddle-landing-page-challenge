@@ -1,11 +1,15 @@
 #header {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
   .header-container {
     display: flex;
 
     .logo {
       display: flex;
       width: 120px;
+
+      @media screen and (min-width: 768px) {
+        width: 230px;
+      }
 
       img {
         width: 100%;
@@ -44,6 +48,32 @@
         line-height: 34px;
       }
     }
+
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+      align-items: center;
+
+      .illustration,
+      .intro {
+        width: 50%;
+      }
+
+      .intro {
+        text-align: left;
+        align-items: flex-start;
+        gap: 20px;
+
+        .title {
+          font-size: 45px;
+          line-height: 55px;
+          width: 80%;
+        }
+
+        .text {
+          width: 80%;
+        }
+      }
+    }
   }
 }
 
@@ -62,7 +92,21 @@
         display: flex;
         border-radius: 50%;
         padding: 8px;
+
+        &:hover {
+          border-color: var(--clr-soft-magenta);
+
+          svg {
+            fill: var(--clr-soft-magenta);
+          }
+        }
       }
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .container {
+      justify-content: flex-end;
     }
   }
 }
